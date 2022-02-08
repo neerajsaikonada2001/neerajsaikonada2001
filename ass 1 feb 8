@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct students
+{
+char name[30];
+int marks[5];
+int total;
+float percentage;
+}
+int main()
+{
+struct student std;
+int i;
+printf("enter name:");
+gets(std.name);
+printf("enter marks:");
+std.total=0;
+for(i=0;i<5;i++)
+{
+printf("marks in subjects %d",i+1);
+scanf("%d",&std.marks[i]);
+std.total+=std.marks[i]);
+}
+std.percentage=(float)((float)std.total/(float)500)*100;
+printf("\nname:%s \ntotal marks:%d \npercentage: %2f",std.name,std.total,std.percentage);
+return 0;
+}
